@@ -10,7 +10,6 @@ import android.widget.EditText
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import com.example.android.aboutme.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,11 +37,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.apply {
             //nickname_text.text = binding.nickname_edit.text
-            myName?.nickname = nickname_edit.text.toString()
+            myName?.nickname = nicknameEdit.text.toString()
             invalidateAll()
-            nickname_edit.visibility = View.GONE
-            done_button.visibility = View.GONE
-            nickname_text.visibility = View.VISIBLE
+            nicknameEdit.visibility = View.GONE
+            doneButton.visibility = View.GONE
+            nicknameText.visibility = View.VISIBLE
         }
 
         //Hide the keyboard.
